@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Ariel, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+        /*********** header and nav styling *************/
+
+header {
+    position: relative;
+    background: #fffabe url("./images/logo.png") no-repeat 7% 50%;
+    width: 100%;
+    height: 72px;
+}
+nav {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    margin: 0;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    padding: 22px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #515151;
+}
+nav ul li a:hover {
+    color: #d42551;
+}
+
+        /********** main section image and content styling ************/
+
+.main-image img {
+    width: 100%;
+}
+
+.main-content {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+.main-content h3 {
+    font-size: 20px;
+    padding: 35px 0;
+    color: #6a6969;
+}
+.main-content p {
+    font-size: 14px;
+    padding: 20px 0;
+    color: #6a6969;
+}
+
+        /*** inner divs for main content styling on home page (and form styling) ***/
+
+.aside-image {
+    display: inline-block;
+    width: 28%;
+    text-align: center;
+}
+.main-text {
+    width: 100%;
+}
+.main-text p {
+    word-spacing: 2px;
+    line-height: 130%;
+}
+.main-text li {
+    font-size: 14px;
+    color: #6a6969;
+}
+.main-content span {
+     color: #df5277;
+ }
+
+        /*** inner divs for main content styling on the rest of the pages  ***/
+
+.main-text-with-background-image {
+    width: 100%;
+    background: url("../images/our-macarons-background.png") no-repeat right 76%;
+    background-size: 100% auto;
+    padding-bottom: 42px;
+}
+.main-text-with-background-image-2 {
+    width: 100%;
+    background: url("../images/gifts-parties-background.png") no-repeat right 100%;
+    background-size: 100% auto;
+    padding-bottom: 42px;
+}
+.contain-text-area {
+    width: 60%;
+}
+
+.contact-page-text {
+    display: inline-block;
+    width: 33%;
+}
+.contact-page-text p {
+    word-spacing: 2px;
+    padding: 1px 0;
+}
+.main-content .paragraph-line-gap {
+    padding-top: 30px;
+}
+
+.contact-form {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+form {
+    width: 310px;
+    padding-bottom: 50px;
+}
+input {
+    padding: 5px;
+    margin: 6px;
+    width: 310px;
+    height: 35px;
+    background-color: #f5f5f5;
+    border: none;
+}
+textarea {
+    padding: 6px;
+    margin: 5px;
+    width: 310px;
+    height: 70px;
+    background-color: #f5f5f5;
+    border: none;
+    font-family: Ariel, Helvetica, sans-serif;
+}
+button {
+    width: 155px;
+    height: 35px;
+    margin-top: 5px;
+    background-color: #f5f5f5;
+    border: none;
+    float: right;
+}
+
+        /********* weekly menu content and container styling **********/
+
+.weekly-menu-container {
+    width: 100%;
+    text-align: center;
+}
+.weekly-menu-container article {
+    position: relative;
+    display: inline-block;
+    width: 126px;
+    height: 140px;
+    margin: 25px 6px;
+    background-color: #fffabe;
+    color: #6a6969;
+    text-align: start;
+}
+.not-colored-section {
+    padding: 13px 13px 0;
+}
+.weekly-menu-container h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.weekly-menu-container p {
+    font-size: 12px;
+}
+.weekly-menu-container div p {
+    display: inline-block;
+    margin: 0;
+}
+.not-colored-section > p {
+    padding-top: 10px;
+}
+.weekly-menu-container div img {
+    float: right;
+}
+
+.not-colored-div, .colored-div {
+    position: absolute;
+    height: 33px;
+    width: 100%;
+    padding: 4px 13px 0;
+}
+.not-colored-div {
+    bottom: 33px;
+}
+.colored-div {
+    bottom: 0;
+}
+.not-colored-div img {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+
+.colored-div img {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+
+.monday .colored-div {
+    background-color: #824603;
+    color: white;
+}
+.wednesday .colored-div {
+    background-color: #df5277;
+    color: white;
+}
+.friday .colored-div {
+    background-color: #a2304e;
+    color: white;
+}
+.sunday .colored-div {
+    background-color: #c39005;
+    color: white;
+}
+
+        /*********** footer content styling ************/
+
+footer {
+    width: 100%;
+    /*max-width: 1000px;*/
+    height: 80px;
+    margin: 20px 0 0;
+    background-color: #df5277;
+}
+
+.contact-container {
+    width: 90%;
+    margin: auto;
+}
+.footer-contact-1, .footer-contact-2, .footer-contact-3{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+.footer-contact-3 img {
+    padding-left: 18px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .footer-contact-1 {
+        text-align: right;
+        width: 49%;
+        padding-top: 5px;
+    }
+    .footer-contact-2 {
+        width: 49%;
+        padding-top: 5px;
+    }
+    .footer-contact-3 {
+        width: 100%;
+        text-align: center;
+        padding-top: 6px;
+    }
+    .destroy-image-mwahahaha-2 {
+        display: none;
+    }
+    .contact-page-text {
+        width: 50%;
+    }
+    .contact-form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    header {
+        height: 100px;
+        background-position: center 25%;
+    }
+    nav {
+        position: static;
+        padding-top: 40px;
+        margin: auto;
+        text-align: center;
+    }
+    .footer-contact-3 img {
+        padding-left: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main-text {
+        display: block;
+        margin: auto;
+    }
+    .main-text-with-background-image {
+        background-image: none;
+    }
+    .contain-text-area {
+        width: 100%;
+    }
+    .main-text-with-background-image-2 {
+        background-image: none;
+    }
+    .destroy-image-mwahahaha-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    nav ul li {
+        padding: 22px 5px 0;
+    }
+    nav a {
+        font-size: 0.8em;
+    }
+    .main-content {
+        width: 80%;
+        padding: 0 0 10px;
+    }
+    .contact-page-text {
+        width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .contact-form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav ul li {
+        padding: 25px 5px 0;
+    }
+    nav a{
+        font-size: 0.7em;
+    }
+}
