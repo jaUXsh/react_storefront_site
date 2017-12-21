@@ -1,9 +1,13 @@
 import React from 'react';
+import Homepage from './homepage';
 
-const App = () => (
-    <div>
-        <h1>MBoutique Home Page - Coming Soon!</h1>
-    </div>
-);
+
+const App = () => {
+    return (
+        <div>
+            <Homepage />
+        </div>
+    );
+};
 
 export default App;
