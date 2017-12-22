@@ -93,13 +93,13 @@ nav ul li a:hover {
 
 .main-text-with-background-image {
     width: 100%;
-    background: url("../images/our-macarons-background.png") no-repeat right 76%;
+    background: url("./images/our-macarons-background.png") no-repeat right 76%;
     background-size: 100% auto;
     padding-bottom: 42px;
 }
 .main-text-with-background-image-2 {
     width: 100%;
-    background: url("../images/gifts-parties-background.png") no-repeat right 100%;
+    background: url("./images/gifts-parties-background.png") no-repeat right 100%;
     background-size: 100% auto;
     padding-bottom: 42px;
 }
