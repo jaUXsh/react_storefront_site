@@ -31,7 +31,6 @@ class ContactForm extends Component {
         this.reset();
     }
     reset() {
-        console.log('reset invoked');
         this.setState({
             form: {
                 name: '',
@@ -45,7 +44,6 @@ class ContactForm extends Component {
         });
     }
     render() {
-        console.log('shtuff is happeningn');
         const contactFormStyle = {
             paddingLeft: "20px",
         };
