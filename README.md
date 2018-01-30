@@ -1,9 +1,17 @@
-# React MBoutique
+# React Mock Storefront Page - MBoutique
 
-> This repo contains the base code and setup to build the MBoutique website with React
+> This repo contains the base code and setup of a mock macaraon bakery storefront page. This website is built completely in React.
 
-### Part 1
-> All setup and other instructions for part one can be found at: <a href="http://reactprototypes.com/projects/mboutique-home" target="_blank" >http://reactprototypes.com/projects/mboutique-home</a>
+### Feature List
+* Banner Images Dynamically Change
+* Daily Menu Items on Homepage incorporates a Higher Order Funciton, allowing for flexible menu items
+* React Router to route user to various pages
+* Pages and content are various and dynamic React components
 
-### Part 2
-> Instructions coming soon!
+[comment]: <a href="(live link)" target="_blank" >(Live Link)[comment]: </a>
+
+### Learned:
+* Affirmed foundation in creating a full website in React and React Router
+* Incorporation of higher order functions
+
+
