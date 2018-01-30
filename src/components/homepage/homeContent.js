@@ -1,5 +1,5 @@
 import React from 'react';
-import hpImg from "../assets/images/macarons-image.png";
+import hpImg from "../../assets/images/macarons-image.png";
 
 const HomeContent = () => {
     const hpStyle = {
