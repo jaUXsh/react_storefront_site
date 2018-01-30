@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactForm from './contactForm';
 
-import macImg from '../assets/images/macarons-image.png';
+import macImg from '../../assets/images/macarons-image.png';
 
 const ContactContent = () => {
     const macGraphicStyle = {
@@ -24,7 +24,7 @@ const ContactContent = () => {
             </div>
             <ContactForm />
             <div className="aside-image">
-                <img src={macImg} alt="Macarons graphic" style={macGraphicStyle}/>
+                <img src={macImg} alt="Macarons graphic" style={macGraphicStyle} />
             </div>
         </div>
     )
