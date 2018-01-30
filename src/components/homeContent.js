@@ -9,7 +9,7 @@ const HomeContent = () => {
     return (
         <section className="main-content">
             <div className="aside-image">
-                <img src={hpImg} alt="Macrons graphic" />
+                <img className="responsive-hide" src={hpImg} alt="Macrons graphic" />
             </div>
             <div className="main-text">
                 <h3>Welcome to MBoutique!</h3>

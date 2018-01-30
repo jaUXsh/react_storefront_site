@@ -90,6 +90,10 @@ nav ul li a:hover {
      color: #df5277;
  }
 
+ .main-text.our-macaron-page {
+     width: 100%;
+ }
+
         /*** inner divs for main content styling on the rest of the pages  ***/
 
 .main-text-with-background-image {
@@ -164,72 +168,80 @@ button {
 .weekly-menu-container article {
     position: relative;
     display: inline-block;
-    width: 126px;
-    height: 140px;
-    margin: 25px 6px;
+    width: 11.5vw;
+    height: 18vh;
+    margin: 2% 1%;
     background-color: #fffabe;
     color: #6a6969;
     text-align: start;
 }
-.not-colored-section {
+.daily-sample-top {
     padding: 13px 13px 0;
 }
 .weekly-menu-container h4 {
-    font-size: 14px;
+    font-size: 1.5vw;
     font-weight: normal;
     margin: 0;
 }
 .weekly-menu-container p {
-    font-size: 12px;
+    font-size: 1vw;
 }
 .weekly-menu-container div p {
     display: inline-block;
     margin: 0;
 }
-.not-colored-section > p {
+.daily-sample-top > p {
     padding-top: 10px;
 }
 .weekly-menu-container div img {
     float: right;
+    position: absolute;
+    right: 10%;
+    bottom: 19.6%;
+    height: 70%;
 }
 
-.not-colored-div, .colored-div {
+.daily-sample-mid, .daily-sample-bot {
     position: absolute;
-    height: 33px;
+    height: 26.7%;
     width: 100%;
     padding: 4px 13px 0;
 }
-.not-colored-div {
-    bottom: 33px;
+
+.daily-sample-mid {
+    bottom: 24%;
 }
-.colored-div {
+.daily-sample-bot {
     bottom: 0;
 }
-.not-colored-div img {
+
+/* .daily-sample-mid img {
     position: absolute;
-    right: 10px;
-    bottom: 6px;
+    right: 10%;
+    bottom: 19.6%;
+    height: 70%;
 }
 
-.colored-div img {
+.daily-sample-bot img {
     position: absolute;
-    right: 10px;
-    bottom: 6px;
-}
+    right: 10%;
+    bottom: 19.6%;
+    height: 70%;
+} */
 
-.monday .colored-div {
+.monday .daily-sample-bot {
     background-color: #824603;
     color: white;
 }
-.wednesday .colored-div {
+.wednesday .daily-sample-bot {
     background-color: #df5277;
     color: white;
 }
-.friday .colored-div {
+.friday .daily-sample-bot {
     background-color: #a2304e;
     color: white;
 }
-.sunday .colored-div {
+.sunday .daily-sample-bot {
     background-color: #c39005;
     color: white;
 }
@@ -238,8 +250,6 @@ button {
 
 footer {
     width: 100%;
-    /*max-width: 1000px;*/
-    height: 80px;
     margin: 20px 0 0;
     background-color: #df5277;
 }
@@ -254,7 +264,7 @@ footer {
     text-align: center;
     padding-top: 10px;
     color: white;
-    font-size: 12px;
+    font-size: 1.5vw;
 }
 .footer-contact-3 img {
     padding-left: 18px;
@@ -263,7 +273,7 @@ footer {
 footer p {
     text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 0.75em;
     margin: 0;
     padding-top: 10px;
 }
@@ -274,17 +284,21 @@ footer p {
         text-align: right;
         width: 49%;
         padding-top: 5px;
+        font-size: 3vmin;
     }
     .footer-contact-2 {
         width: 49%;
         padding-top: 5px;
+        font-size: 3vmin;
     }
-    .footer-contact-3 {
+    .footer-contact-3
+     {
         width: 100%;
         text-align: center;
         padding-top: 6px;
+        font-size: 3vmin;
     }
-    .destroy-image-mwahahaha-2 {
+    .responsive-hide {
         display: none;
     }
     .contact-page-text {
@@ -292,6 +306,24 @@ footer p {
     }
     .contact-form {
         width: 50%;
+    }
+    .weekly-menu-container article {
+        position: relative;
+        display: inline-block;
+        width: 50vmax;
+        height: 50vmax;
+        margin: 2% 1%;
+        background-color: #fffabe;
+        color: #6a6969;
+        text-align: start;
+    }
+    .weekly-menu-container h4 {
+        font-size: 9.5vmin;
+        font-weight: normal;
+        margin: 0;
+    }
+    .weekly-menu-container p {
+        font-size: 5.5vmin;
     }
 }
 
@@ -324,9 +356,6 @@ footer p {
     }
     .main-text-with-background-image-2 {
         background-image: none;
-    }
-    .destroy-image-mwahahaha-1 {
-        display: none;
     }
 }
 
