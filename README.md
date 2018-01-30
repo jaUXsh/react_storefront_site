@@ -8,8 +8,6 @@
 * React Router to route user to various pages
 * Pages and content are various and dynamic React components
 
-[comment]: <a href="(live link)" target="_blank" >(Live Link)[comment]: </a>
-
 ### Learned:
 * Affirmed foundation in creating a full website in React and React Router
 * Incorporation of higher order functions
