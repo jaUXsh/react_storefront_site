@@ -6,7 +6,7 @@ const OurMacaronContent = () => {
     };
     return (
         <div className="main-content">
-            <div className="main-text">
+            <div className="main-text our-macaron-page">
                 <h3>Our macarons are freshly made by hand</h3>
                 <p>The vivid hues of our unique macarons reflect the natural flavors and essences that infuse the ganache filling of these delicious almost cookies - each has its own personality, and all of them are made to savour for their delicacy and unique character.</p>
                 <h3>Classics</h3>
