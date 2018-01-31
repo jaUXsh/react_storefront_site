@@ -7,7 +7,7 @@ import macaronSamples from './macaronSamples';
 const SampleMenu = () => {
     const macaronDailySamples = macaronSamples.map((item, index) => {
         return (
-            <article key={index} className={item.dayClass}>
+            <article key={index} className={`${item.dayClass} sample-day`}>
                 <div className="daily-sample-top">
                     <h4>{item.day}</h4>
                     <p>{item.time}</p>
@@ -18,7 +18,7 @@ const SampleMenu = () => {
         )
     });
     return (
-        <section className="weekly-menu-container">
+        <section className="weekly-menu-container slider">
             {macaronDailySamples}
         </section>
     )

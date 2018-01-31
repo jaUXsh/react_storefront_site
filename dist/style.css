@@ -165,7 +165,7 @@ button {
     width: 100%;
     text-align: center;
 }
-.weekly-menu-container article {
+.weekly-menu-container .sample-day {
     position: relative;
     display: inline-block;
     width: 11.5vw;
@@ -214,20 +214,6 @@ button {
 .daily-sample-bot {
     bottom: 0;
 }
-
-/* .daily-sample-mid img {
-    position: absolute;
-    right: 10%;
-    bottom: 19.6%;
-    height: 70%;
-}
-
-.daily-sample-bot img {
-    position: absolute;
-    right: 10%;
-    bottom: 19.6%;
-    height: 70%;
-} */
 
 .monday .daily-sample-bot {
     background-color: #824603;
@@ -307,24 +293,29 @@ footer p {
     .contact-form {
         width: 50%;
     }
-    .weekly-menu-container article {
-        position: relative;
-        display: inline-block;
-        width: 50vmax;
-        height: 50vmax;
-        margin: 2% 1%;
-        background-color: #fffabe;
-        color: #6a6969;
-        text-align: start;
+    .weekly-menu-container .sample-day {
+        width: 23%;
+        height: 23vmax;
     }
     .weekly-menu-container h4 {
-        font-size: 9.5vmin;
+        font-size: 3.5vw;
         font-weight: normal;
         margin: 0;
     }
     .weekly-menu-container p {
-        font-size: 5.5vmin;
+        font-size: 2vw;
     }
+    .weekly-menu-container div img {
+        bottom: 30%;
+        height: 50%;
+    }
+    /* SLIDER for Mobile */
+    .slider {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
 }
 
 @media screen and (max-width: 890px) {
@@ -385,5 +376,15 @@ footer p {
     }
     .navigation a{
         font-size: 0.7em;
+    }
+    .weekly-menu-container .sample-day {
+        width: 35%;
+        height: 23vmax;
+    }
+    .weekly-menu-container h4 {
+        font-size: 5vw;
+    }
+    .weekly-menu-container p {
+        font-size: 3.25vw;
     }
 }
