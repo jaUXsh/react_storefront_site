@@ -293,10 +293,6 @@ footer p {
     .contact-form {
         width: 50%;
     }
-    /* .weekly-menu-container .sample-day {
-        width: 23%;
-        height: 23vmax;
-    } */
     .weekly-menu-container h4 {
         font-size: 3.5vw;
         font-weight: normal;
@@ -310,11 +306,7 @@ footer p {
         height: 50%;
     }
     /* SLIDER for Mobile */
-    /* .weekly-menu-container .slider {
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    } */
+
     .weekly-menu-container {
         width: 100%;
         text-align: center;
@@ -335,8 +327,8 @@ footer p {
         background-position: center 25%;
     }
     .navigation {
-        position: static;
-        padding-top: 40px;
+        padding-top: 4%;
+        right: 0;
         margin: auto;
         text-align: center;
     }
@@ -346,6 +338,13 @@ footer p {
 }
 
 @media screen and (max-width: 750px) {
+    .navigation {
+        position: relative;
+        padding-top: 4%;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
     .main-text {
         display: block;
         margin: auto;
@@ -362,6 +361,13 @@ footer p {
 }
 
 @media screen and (max-width: 615px) {
+    .navigation {
+        position: relative;
+        padding-top: 6%;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
     .navigation .nav-list li {
         padding: 22px 5px 0;
     }
@@ -382,6 +388,14 @@ footer p {
     }
 }
 @media screen and (max-width: 400px) {
+    .navigation {
+        position: relative;
+        padding-top: 7%;
+        /* font-size: 2vw; */
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
     .navigation .nav-list li {
         padding: 25px 5px 0;
     }
