@@ -293,10 +293,10 @@ footer p {
     .contact-form {
         width: 50%;
     }
-    .weekly-menu-container .sample-day {
+    /* .weekly-menu-container .sample-day {
         width: 23%;
         height: 23vmax;
-    }
+    } */
     .weekly-menu-container h4 {
         font-size: 3.5vw;
         font-weight: normal;
@@ -310,10 +310,21 @@ footer p {
         height: 50%;
     }
     /* SLIDER for Mobile */
-    .slider {
+    /* .weekly-menu-container .slider {
         display: flex;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+    } */
+    .weekly-menu-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        overflow-x: auto;
+    }
+    .weekly-menu-container .sample-day {
+        flex-shrink: 0;
+        width: 23%;
+        height: 23vmax;
     }
 
 }
