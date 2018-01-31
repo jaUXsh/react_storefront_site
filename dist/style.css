@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: Ariel, Helvetica, sans-serif;
 }
-h1, h2, h3, h4, p, ul {
+h1, h2, h3, h4, p, .nav-list {
     margin: 0;
 }
 
@@ -15,33 +15,33 @@ h1, h2, h3, h4, p, ul {
     margin: auto;
 }
 
-        /*********** header and nav styling *************/
+        /*********** header and .navigation styling *************/
 
-header {
+.header {
     position: relative;
     background: #fffabe url("./images/logo.png") no-repeat 7% 50%;
     width: 100%;
     height: 72px;
 }
-nav {
+.navigation {
     position: absolute;
     right: 80px;
     bottom: 0;
     margin: 0;
 }
-nav ul {
+.navigation .nav-list {
     padding: 0;
     margin: 0;
 }
-nav ul li {
+.nav-item {
     display: inline-block;
     padding: 22px;
 }
-nav ul li a {
+.nav-item a {
     text-decoration: none;
     color: #515151;
 }
-nav ul li a:hover {
+.nav-item a:hover {
     color: #d42551;
 }
 
@@ -165,7 +165,7 @@ button {
     width: 100%;
     text-align: center;
 }
-.weekly-menu-container article {
+.weekly-menu-container .sample-day {
     position: relative;
     display: inline-block;
     width: 11.5vw;
@@ -214,20 +214,6 @@ button {
 .daily-sample-bot {
     bottom: 0;
 }
-
-/* .daily-sample-mid img {
-    position: absolute;
-    right: 10%;
-    bottom: 19.6%;
-    height: 70%;
-}
-
-.daily-sample-bot img {
-    position: absolute;
-    right: 10%;
-    bottom: 19.6%;
-    height: 70%;
-} */
 
 .monday .daily-sample-bot {
     background-color: #824603;
@@ -307,24 +293,32 @@ footer p {
     .contact-form {
         width: 50%;
     }
-    .weekly-menu-container article {
-        position: relative;
-        display: inline-block;
-        width: 50vmax;
-        height: 50vmax;
-        margin: 2% 1%;
-        background-color: #fffabe;
-        color: #6a6969;
-        text-align: start;
-    }
     .weekly-menu-container h4 {
-        font-size: 9.5vmin;
+        font-size: 3.5vw;
         font-weight: normal;
         margin: 0;
     }
     .weekly-menu-container p {
-        font-size: 5.5vmin;
+        font-size: 2vw;
     }
+    .weekly-menu-container div img {
+        bottom: 30%;
+        height: 50%;
+    }
+    /* SLIDER for Mobile */
+
+    .weekly-menu-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        overflow-x: auto;
+    }
+    .weekly-menu-container .sample-day {
+        flex-shrink: 0;
+        width: 23%;
+        height: 23vmax;
+    }
+
 }
 
 @media screen and (max-width: 890px) {
@@ -332,9 +326,9 @@ footer p {
         height: 100px;
         background-position: center 25%;
     }
-    nav {
-        position: static;
-        padding-top: 40px;
+    .navigation {
+        padding-top: 4%;
+        right: 0;
         margin: auto;
         text-align: center;
     }
@@ -344,6 +338,13 @@ footer p {
 }
 
 @media screen and (max-width: 750px) {
+    .navigation {
+        position: relative;
+        padding-top: 4%;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
     .main-text {
         display: block;
         margin: auto;
@@ -360,10 +361,17 @@ footer p {
 }
 
 @media screen and (max-width: 615px) {
-    nav ul li {
+    .navigation {
+        position: relative;
+        padding-top: 6%;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .navigation .nav-list li {
         padding: 22px 5px 0;
     }
-    nav a {
+    .navigation a {
         font-size: 0.8em;
     }
     .main-content {
@@ -380,10 +388,28 @@ footer p {
     }
 }
 @media screen and (max-width: 400px) {
-    nav ul li {
+    .navigation {
+        position: relative;
+        padding-top: 7%;
+        /* font-size: 2vw; */
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .navigation .nav-list li {
         padding: 25px 5px 0;
     }
-    nav a{
+    .navigation a{
         font-size: 0.7em;
+    }
+    .weekly-menu-container .sample-day {
+        width: 35%;
+        height: 23vmax;
+    }
+    .weekly-menu-container h4 {
+        font-size: 5vw;
+    }
+    .weekly-menu-container p {
+        font-size: 3.25vw;
     }
 }
