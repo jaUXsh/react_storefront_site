@@ -4,7 +4,7 @@ import Footer from '../footer';
 import BannerImg from '../bannerImg';
 import GiftsAndPartiesContent from './gPcontent';
 
-import gPimg from '../../assets/images/gifts-parties-image.png';
+import gPimg from '../../assets/images/banners/gifts-parties-image.jpg';
 
 
 const GiftsAndParties = () => {

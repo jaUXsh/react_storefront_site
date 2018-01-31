@@ -4,7 +4,7 @@ import Footer from '../footer';
 import BannerImg from '../bannerImg';
 import ContactContent from './contactContent';
 
-import contactImg from '../../assets/images/contact-image.png';
+import contactImg from '../../assets/images/banners/contact-image.jpg';
 
 const Contact = () => {
     return (

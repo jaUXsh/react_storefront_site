@@ -4,7 +4,7 @@ import Footer from '../footer';
 import BannerImg from '../bannerImg';
 import OurMacaronContent from './ourMacaronContent';
 
-import ourMacaron from '../../assets/images/our-macarons-image.png';
+import ourMacaron from '../../assets/images/banners/our-macarons-image.jpg';
 
 
 const OurMacaron = () => {
