@@ -5,7 +5,7 @@ import BannerImg from '../bannerImg';
 import HomeContent from './homeContent';
 import SampleMenu from './sampleMenu'
 
-import homeImg from '../../assets/images/welcome-image.png';
+import homeImg from '../../assets/images/banners/welcome-image.jpg';
 
 
 const Homepage = () => {
