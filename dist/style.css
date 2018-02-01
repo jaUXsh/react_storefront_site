@@ -304,7 +304,8 @@ footer p {
     }
     .weekly-menu-container div img {
         bottom: 30%;
-        height: 50%;
+        height: 3.5vmax;
+        width: 3.5vmax;
     }
     /* SLIDER for Mobile */
 
@@ -318,6 +319,7 @@ footer p {
         flex-shrink: 0;
         width: 23%;
         height: 23vmax;
+        margin: 0 0 2% 0;
     }
 
 }
@@ -359,6 +361,10 @@ footer p {
     .main-text-with-background-image-2 {
         background-image: none;
     }
+    .weekly-menu-container .sample-day {
+        width: 28%;
+        height: 26vmax;
+    }
 }
 
 @media screen and (max-width: 615px) {
@@ -387,6 +393,16 @@ footer p {
     .contact-form {
         width: 100%;
     }
+    .weekly-menu-container .sample-day {
+    width: 48%;
+    height: 26vmax;
+    }
+    .weekly-menu-container h4 {
+        font-size: 6.5vw;
+    }
+    .weekly-menu-container p {
+        font-size: 4vw;
+    }
 }
 @media screen and (max-width: 400px) {
     .navigation {
@@ -404,8 +420,9 @@ footer p {
         font-size: 0.7em;
     }
     .weekly-menu-container .sample-day {
-        width: 35%;
-        height: 23vmax;
+        width: 48%;
+        height: 25vmax;
+        margin: 0;
     }
     .weekly-menu-container h4 {
         font-size: 5vw;

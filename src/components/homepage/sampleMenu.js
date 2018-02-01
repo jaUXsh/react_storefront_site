@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { WindowResizeListener } from 'react-window-resize-listener';
 
 import macaronSamples from './macaronSamples';
-import styles from 'react-responsive-carousel/lib/styles/carousel.css';
+import './carousel.css';
 
 
 class SampleMenu extends Component {
