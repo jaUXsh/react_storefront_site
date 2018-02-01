@@ -1,6 +1,6 @@
 # React Mock Storefront Page - MBoutique
 
-> This repo contains the base code and setup of a mock macaraon bakery storefront page. This website is built completely in React.
+> This repo contains the base code and setup of a mock macaraon bakery storefront page. This project allowed me to practice pixel perfect htmlization, creating a successful website in React.
 
 ### Feature List
 * Banner Images Dynamically Change
