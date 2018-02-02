@@ -318,8 +318,8 @@ footer p {
     .weekly-menu-container .sample-day {
         flex-shrink: 0;
         width: 23%;
-        height: 20vmax;
-        margin: 0 0 2% 0;
+        height: 19.25vmax;
+        margin: 0 1% 2% 1%;
     }
 
 }
@@ -337,6 +337,12 @@ footer p {
     }
     .footer-contact-3 img {
         padding-left: 12px;
+    }
+    .weekly-menu-container .sample-day {
+        flex-shrink: 0;
+        width: 23%;
+        height: 23vmax;
+        margin: 0 1% 2% 1%;
     }
 }
 
