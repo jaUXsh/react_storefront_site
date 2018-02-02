@@ -318,7 +318,7 @@ footer p {
     .weekly-menu-container .sample-day {
         flex-shrink: 0;
         width: 23%;
-        height: 23vmax;
+        height: 20vmax;
         margin: 0 0 2% 0;
     }
 

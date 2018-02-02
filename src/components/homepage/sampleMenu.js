@@ -32,13 +32,14 @@ class SampleMenu extends Component {
 
         const { width } = this.state;
 
-        if (width < 1000) {
+        if (width <= 1000) {
+            // create for loop to have multiple articles in one index, return new arr
             return (
                 <div>
                     <WindowResizeListener onResize={windowSize => {
                         this.setState({ width: windowSize.windowWidth });
                     }} />
-                    <Carousel showStatus={false} infiniteLoop className="weekly-menu-container slider">
+                    <Carousel infiniteLoop showStatus={false} className="weekly-menu-container slider">
                         {macaronDailySamples}
                     </Carousel>
                 </div>
