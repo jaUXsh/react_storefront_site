@@ -169,7 +169,7 @@ button {
     position: relative;
     display: inline-block;
     width: 11.5vw;
-    height: 18vh;
+    height: 23vh;
     margin: 2% 1%;
     background-color: #fffabe;
     color: #6a6969;
@@ -198,20 +198,20 @@ button {
     position: absolute;
     right: 10%;
     bottom: 19.6%;
-    height: 70%;
-    width: 19%
+    height: 50%;
+    width: unset;
 }
 
 .daily-sample-mid, .daily-sample-bot {
-    position: absolute;
-    height: 26.7%;
+    position: relative;
+    height: 28.5%;
     width: 100%;
-    padding: 4px 13px 0;
+    padding: 7% 9% 0;
 }
 
-.daily-sample-mid {
+/* .daily-sample-mid {
     bottom: 24%;
-}
+} */
 .daily-sample-bot {
     bottom: 0;
 }
@@ -299,16 +299,16 @@ footer p {
         font-weight: normal;
         margin: 0;
     }
+    .daily-sample-mid, .daily-sample-bot {
+        padding: 7% 7% 0;
+    }
     .weekly-menu-container p {
         font-size: 2vw;
     }
     .weekly-menu-container div img {
-        bottom: 30%;
-        height: 3.5vmax;
-        width: 3.5vmax;
+        height: 40%;
+        width: unset;
     }
-    /* SLIDER for Mobile */
-
     .weekly-menu-container {
         width: 100%;
         text-align: center;
@@ -318,8 +318,14 @@ footer p {
     .weekly-menu-container .sample-day {
         flex-shrink: 0;
         width: 23%;
-        height: 19.25vmax;
+        height: 20vmax;
         margin: 0 1% 2% 1%;
+    }
+    .daily-sample-mid, .daily-sample-bot {
+        position: relative;
+        height: 28.3%;
+        width: 100%;
+        padding: 7% 9% 0;
     }
 
 }
@@ -341,8 +347,13 @@ footer p {
     .weekly-menu-container .sample-day {
         flex-shrink: 0;
         width: 23%;
-        height: 23vmax;
+        height: 22vmax;
         margin: 0 1% 2% 1%;
+    }
+    .daily-sample-mid, .daily-sample-bot {
+        position: relative;
+        height: 30%;
+        padding: 11% 6% 0;
     }
 }
 
@@ -367,13 +378,17 @@ footer p {
     .main-text-with-background-image-2 {
         background-image: none;
     }
+    .daily-sample-mid, .daily-sample-bot {
+    position: relative;
+    height: 30%;
+    }
     .weekly-menu-container .sample-day {
         width: 28%;
-        height: 26vmax;
+        height: 24vmax;
     }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 487px) {
     .navigation {
         position: relative;
         padding-top: 6%;
@@ -400,14 +415,22 @@ footer p {
         width: 100%;
     }
     .weekly-menu-container .sample-day {
-    width: 48%;
-    height: 26vmax;
+        width: 26.5%;
+        height: 25vmax;
+    }
+    .daily-sample-top {
+        padding: 3% 5% 0;
+    }
+    .daily-sample-mid, .daily-sample-bot {
+        position: relative;
+        height: 32.7%;
+        padding: 15% 5% 0;
     }
     .weekly-menu-container h4 {
-        font-size: 6.5vw;
+        font-size: 4.5vw;
     }
     .weekly-menu-container p {
-        font-size: 4vw;
+        font-size: 2.8vw;
     }
 }
 @media screen and (max-width: 400px) {
@@ -426,9 +449,14 @@ footer p {
         font-size: 0.7em;
     }
     .weekly-menu-container .sample-day {
-        width: 48%;
-        height: 25vmax;
-        margin: 0;
+        width: 39%;
+        height: 22vmax;
+        margin-bottom: 5%;
+    }
+    .daily-sample-mid, .daily-sample-bot {
+        position: relative;
+        height: 32.7%;
+        padding: 10% 5% 0;
     }
     .weekly-menu-container h4 {
         font-size: 5vw;

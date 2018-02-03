@@ -32,7 +32,7 @@ class SampleMenu extends Component {
 
         const { width } = this.state;
 
-        if (width <= 1000 && width > 615) {
+        if (width <= 1000 && width > 400) {
             // create for loop to have multiple articles in one index, return new arr
             const set1Arr = [];
             const set2Arr = [];
@@ -82,7 +82,7 @@ class SampleMenu extends Component {
                     </Carousel>
                 </div>
             )
-        } else if (width <= 615) {
+        } else if (width <= 400) {
             return (
                 <div>
                     <WindowResizeListener onResize={windowSize => {
