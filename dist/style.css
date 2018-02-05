@@ -25,9 +25,9 @@ h1, h2, h3, h4, p, .nav-list {
 }
 .navigation {
     position: absolute;
-    right: 80px;
-    bottom: 0;
+    right: 0;
     margin: 0;
+    padding: 5px 0;
 }
 .navigation .nav-list {
     padding: 0;
@@ -94,6 +94,11 @@ h1, h2, h3, h4, p, .nav-list {
      width: 100%;
  }
 
+ .main-text-with-background-image-2 li {
+    font-size: 14px;
+    color: #6a6969;
+}
+
         /*** inner divs for main content styling on the rest of the pages  ***/
 
 .main-text-with-background-image {
@@ -130,13 +135,14 @@ h1, h2, h3, h4, p, .nav-list {
     vertical-align: top;
 }
 form {
-    width: 310px;
+    width: 70%;
     padding-bottom: 50px;
+    display: inline;
 }
 input {
     padding: 5px;
     margin: 6px;
-    width: 310px;
+    width: 100%;
     height: 35px;
     background-color: #f5f5f5;
     border: none;
@@ -144,19 +150,23 @@ input {
 textarea {
     padding: 6px;
     margin: 5px;
-    width: 310px;
+    width: 100%;
     height: 70px;
+    resize: vertical;
     background-color: #f5f5f5;
     border: none;
     font-family: Ariel, Helvetica, sans-serif;
 }
 button {
-    width: 155px;
-    height: 35px;
+    width: 35%;
+    height: 7.4vh;
     margin-top: 5px;
     background-color: #f5f5f5;
     border: none;
     float: right;
+    padding: 0;
+    left: 1%;
+    position: relative;
 }
 
         /********* weekly menu content and container styling **********/
@@ -169,7 +179,7 @@ button {
     position: relative;
     display: inline-block;
     width: 11.5vw;
-    height: 23vh;
+    /* height: 23vh; */
     margin: 2% 1%;
     background-color: #fffabe;
     color: #6a6969;
@@ -206,7 +216,7 @@ button {
     position: relative;
     height: 28.5%;
     width: 100%;
-    padding: 7% 9% 0;
+    padding: 7%;
 }
 
 /* .daily-sample-mid {
@@ -237,7 +247,7 @@ button {
 
 footer {
     width: 100%;
-    margin: 20px 0 0;
+    padding: 3px 0;
     background-color: #df5277;
 }
 
@@ -267,6 +277,9 @@ footer p {
 
 
 @media screen and (max-width: 1000px) {
+    .main-text {
+        width: 100%;
+    }
     .footer-contact-1 {
         text-align: right;
         width: 49%;
@@ -294,6 +307,9 @@ footer p {
     .contact-form {
         width: 50%;
     }
+    .aside-image {
+        display: none;
+    }
     .weekly-menu-container h4 {
         font-size: 3.5vw;
         font-weight: normal;
@@ -318,14 +334,14 @@ footer p {
     .weekly-menu-container .sample-day {
         flex-shrink: 0;
         width: 23%;
-        height: 20vmax;
+        /* height: 20vmax; */
         margin: 0 1% 2% 1%;
     }
     .daily-sample-mid, .daily-sample-bot {
         position: relative;
         height: 28.3%;
         width: 100%;
-        padding: 7% 9% 0;
+        padding: 7%;
     }
 
 }
@@ -336,8 +352,9 @@ footer p {
         background-position: center 25%;
     }
     .navigation {
-        padding-top: 4%;
+        padding: 9px 0;
         right: 0;
+        font-size: 14px;
         margin: auto;
         text-align: center;
     }
@@ -347,23 +364,29 @@ footer p {
     .weekly-menu-container .sample-day {
         flex-shrink: 0;
         width: 23%;
-        height: 22vmax;
         margin: 0 1% 2% 1%;
     }
     .daily-sample-mid, .daily-sample-bot {
         position: relative;
-        height: 30%;
-        padding: 11% 6% 0;
+        padding: 7%;
     }
 }
 
 @media screen and (max-width: 750px) {
+    .header {
+        position: relative;
+        background: #fffabe url(./images/logo.png) no-repeat 50% 32%;
+        width: 100%;
+    }
     .navigation {
         position: relative;
-        padding-top: 4%;
-        right: 0;
+        padding: 29px 0;
         margin: auto;
         text-align: center;
+    }
+    .nav-item {
+        display: inline-block;
+        padding: 3.5% 2%;
     }
     .main-text {
         display: block;
@@ -380,11 +403,10 @@ footer p {
     }
     .daily-sample-mid, .daily-sample-bot {
     position: relative;
-    height: 30%;
+    padding: 10%;
     }
     .weekly-menu-container .sample-day {
         width: 28%;
-        height: 24vmax;
     }
 }
 
@@ -393,18 +415,16 @@ footer p {
         position: relative;
         background: #FFFABB url(./images/logo.png) no-repeat 50% 19%;
         width: 100%;
-        height: 17vh;
     }
     .navigation {
         position: relative;
-        padding-top: 6%;
-        font-size: 3.5vw;
+        padding: 21px 0;
         right: 0;
         margin: auto;
         text-align: center;
     }
     .navigation .nav-list li {
-        padding: 22px 5px 0;
+        padding: 5.5% 3% 0;
     }
     .navigation a {
         font-size: 0.8em;
@@ -423,15 +443,13 @@ footer p {
     }
     .weekly-menu-container .sample-day {
         width: 26.5%;
-        height: 25vmax;
     }
     .daily-sample-top {
         padding: 3% 5% 0;
     }
     .daily-sample-mid, .daily-sample-bot {
         position: relative;
-        height: 32.7%;
-        padding: 15% 5% 0;
+        padding: 7%;
     }
     .weekly-menu-container h4 {
         font-size: 4.5vw;
@@ -443,27 +461,25 @@ footer p {
 @media screen and (max-width: 400px) {
     .navigation {
         position: relative;
-        padding-top: 10%;
+        padding: 30px 0px;
         font-size: 4.5vw;
         right: 0;
         margin: auto;
         text-align: center;
     }
     .navigation .nav-list li {
-        padding: 25px 5px 0;
+        padding: 3.5% 1.25% 0;
     }
     .navigation a{
         font-size: 0.7em;
     }
     .weekly-menu-container .sample-day {
         width: 39%;
-        height: 22vmax;
         margin-bottom: 5%;
     }
     .daily-sample-mid, .daily-sample-bot {
         position: relative;
-        height: 32.7%;
-        padding: 10% 5% 0;
+        padding: 7%;
     }
     .weekly-menu-container h4 {
         font-size: 5vw;
