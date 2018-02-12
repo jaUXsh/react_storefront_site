@@ -2,7 +2,7 @@ const { resolve } = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: [ './index.js' ],
+    entry: ['./index.js'],
     output: {
         filename: 'bundle.js',
         path: resolve(__dirname, 'dist'),
@@ -13,7 +13,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js|.jsx?$/,
-                use: [ 'babel-loader' ],
+                use: ['babel-loader'],
                 exclude: /node_modules/
             },
             {
@@ -22,8 +22,8 @@ module.exports = {
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [ 'file-loader?hash=sha512&digest=hex&name=imgs/[hash].[ext]',
-                    'image-webpack-loader?bypassOnDebug' ]
+                use: ['file-loader?hash=sha512&digest=hex&name=imgs/[hash].[ext]',
+                    'image-webpack-loader?bypassOnDebug']
             }
         ]
     },
