@@ -22,8 +22,16 @@ module.exports = {
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
-                use: ['file-loader?hash=sha512&digest=hex&name=./imgs/[hash].[ext]',
-                    'image-webpack-loader?bypassOnDebug']
+                use: [
+                    {
+                        loader: 'file-loader?hash=sha512&digest=hex&name=imgs/[hash].[ext]',
+                        options: {
+                            publicPath: 'react-storefront/',
+                            outputPath: 'react-storefront/'
+                        }
+                    },
+                    { loader: 'image-webpack-loader?bypassOnDebug' }
+                ]
             }
         ]
     },
