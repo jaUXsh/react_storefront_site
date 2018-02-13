@@ -26,8 +26,7 @@ module.exports = {
                     {
                         loader: 'file-loader?hash=sha512&digest=hex&name=imgs/[hash].[ext]',
                         options: {
-                            publicPath: 'react-storefront/',
-                            outputPath: 'react-storefront/'
+                            publicPath: 'react-storefront/'
                         }
                     },
                     { loader: 'image-webpack-loader?bypassOnDebug' }
