@@ -2,7 +2,7 @@
 
 > This repo contains the base code and setup of a mock macaraon bakery storefront page. This project allowed me to practice pixel perfect htmlization, creating a successful website in React.
 
-#### [Live Site](mboutique.jaux.site)
+#### [Live Site](http://mboutique.jaux.site)
 
 ### Feature List
 * Banner Images Dynamically Change
