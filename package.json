@@ -15,6 +15,7 @@
     "url": "https://github.com/Learning-Fuze/react_starter.git"
   },
   "dependencies": {
+    "dependencies": "0.0.1",
     "npm": "^6.10.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -23,7 +24,8 @@
     "react-router-dom": "^4.2.2",
     "react-window-resize-listener": "^1.1.0",
     "redux": "^3.7.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "url-parse": "^1.4.7"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
